@@ -1,9 +1,9 @@
-import {PLCS,MODS,layout} from './js/hardware.js';
-import {parse,run,acts,parseLadder,compile} from './js/compiler.js';
-import {ISA,CATS,KINDS,LET1,LET2,ins} from './js/isa.js';
-import {WID,zoomer} from './js/hmi.js';
-import {newRT,rung,grafcet,power,tv} from './js/engine.js';
-import {stParse,stCheck,stRun,ilParse,ilCheck,ilRun,toST,toIL} from './js/text.js';
+import {PLCS,MODS,layout} from './hardware.js';
+import {parse,run,acts,parseLadder,compile} from './compiler.js';
+import {ISA,CATS,KINDS,LET1,LET2,ins} from './isa.js';
+import {WID,zoomer} from './hmi.js';
+import {newRT,rung,grafcet,power,tv} from './engine.js';
+import {stParse,stCheck,stRun,ilParse,ilCheck,ilRun,toST,toIL} from './text.js';
 
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const cl=(v,a,b)=>Math.max(a,Math.min(b,v));
